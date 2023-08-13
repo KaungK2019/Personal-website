@@ -1,0 +1,308 @@
+body {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    background: -webkit-repeating-linear-gradient(270deg, rgb(71, 148, 211), rgb(93, 40, 183), rgb(12, 3, 60));
+    width: 1000px;
+    min-width: 270px;
+    height: 600px;
+    box-shadow: 30px 30px 17px 0px rgba(9, 9, 9, 0.834);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin-top: 9px;
+    margin-left: 7px;
+    height: 60px;
+}
+
+header svg {
+    color: white;
+    margin-left: 10px;
+    width: 50px;
+    height: 70px;
+    min-width: 20px;
+    max-width: 30px;
+    max-height: 40px;
+ }
+
+header > h1 {
+    font-size: 27px;
+    word-spacing: -2px;
+    color: rgb(247, 247, 247);
+    letter-spacing: -1px;
+    margin-left: 30px;
+    width: 10%px;
+    position: relative;
+    left: -19px;
+}
+
+header > h1 span {
+    font-size: 29px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header > ul {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    width: 30%px;
+    height: 60px;
+    gap: 9px;
+    padding-left: 400px;
+    margin-top: 35px;
+}   
+
+header > ul li {
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(253, 254, 255);
+    text-align: center;
+    width: 70px;
+    height: 28px;
+    padding-top: 6px;    
+    border-radius: 7px;
+}
+
+header > ul a {
+    color: white;
+    text-decoration: none; 
+    padding-left: 5px;
+    padding-right: 5px;  
+}
+
+header > ul li:hover {
+    color: rgb(33, 10, 134);
+    background-color: rgba(235, 235, 243, 0.894);
+    cursor: pointer;
+}
+
+section {
+    display: flex;
+    height: 400px;
+    align-items: center;
+}
+
+.text-group {
+    margin-left: 50px;
+    color: white;
+}
+
+
+.text-group h1 {
+   font-weight: normal;
+   font-size: 45px;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+}
+
+.text-group > h1 span {
+    font-size: 37px;
+    line-height: 56px;
+    font-weight: normal;
+}
+
+.text-group p {
+    font-size: 25px;
+    font-family: sans-serif;
+    margin-top: 20px;
+}
+
+.text-group p:nth-of-type(1) {
+    word-spacing: 3px;
+}
+
+.text-group p:nth-of-type(2) {
+    margin-top: -7px;
+    font-size: 14px;
+}
+
+.text-group button {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 35px;
+    color: rgb(18, 7, 231);
+    background-color: rgb(247, 245, 249);
+    border-radius: 20px;
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+.text-group button:hover {
+    background-color: rgba(213, 10, 224, 0.91);
+    color: rgb(242, 239, 239);
+    cursor: pointer;
+}
+
+.text-group + svg {
+    margin-top: 180px;
+    margin-left: 50px;
+    width: 500px;
+    height: 560px;
+}
+
+.mon {
+    padding-left: 70%;
+}
+
+.bar {
+    background-color: rgb(248, 244, 244);
+    justify-content: center;
+    align-items: center;
+    border-radius: 13%;
+    position: relative;
+    left: 60%;
+    display: flex;
+    width: 56px;
+    height: 40px;
+}
+
+.nav-item a:visited {
+    color: rgb(37, 24, 9);
+}
+
+.nav-item a:hover {
+    color: blueviolet;
+}
+
+.nav-item a:active {
+    color: rgb(66, 203, 224);
+}
+
+.text-group a {
+    text-decoration: none;
+}
+
+@media (max-width: 768px) and (min-width: 420px) {
+    .main {
+       width: 100%;
+       height: 100%;
+    }
+
+    section {
+        display: block;
+        margin-left: 0px;
+        margin-top: -60px;
+    }
+
+    .bar {
+        margin-left: 0%;
+    }
+
+    .text-group {
+        margin-top: 60px;
+        margin-left: 10px;
+    }
+
+    .text-group > h1 {
+        font-size: 35px;
+    }
+
+    .text-group > h1 > span {
+        font-size: 30px;
+    }
+
+    .text-group > p {
+        font-size: 18px;
+    }
+
+    header svg {
+        width: 20px;
+        margin-top: -10px;
+        margin-left: 2px;
+    }
+
+    header > h1 {
+        font-size: 20px;
+        width: 3%;
+        margin-top: 0px;
+        margin-left: 23px;
+    }
+
+    header > h1 > span {
+        font-size: 18px;
+    }
+
+    .mon {
+        padding-left: 60%;
+    }
+
+    .text-group + svg {
+        max-width: 400px;
+        max-height: 300px;
+        margin-top: 30px;
+        margin-bottom: auto;
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 420px) and (min-width: 100px) {
+    .main {
+       width: 100%;
+       height: 100%;
+    }
+
+    section {
+        display: block;
+        margin-left: 0px;
+        margin-top: -60px;
+    }
+
+    .text-group {
+        margin-top: 60px;
+        margin-left: 10px;
+    }
+
+    .text-group > h1 {
+        font-size: 30px;
+    }
+
+    .text-group > h1 > span {
+        font-size: 25px;
+    }
+
+    .text-group > p {
+        font-size: 18px;
+    }
+
+    header svg {
+        width: 20px;
+        margin-top: -10px;
+        margin-left: 2px;
+    }
+
+    header > h1 {
+        font-size: 18px;
+        width: 3%;
+        margin-top: 0px;
+        margin-left: 23px;
+    }
+
+    header > h1 > span {
+        font-size: 15px;
+    }
+
+    .mon {
+        padding-left: 48%;
+    }
+
+    .text-group + svg {
+        max-width: 300px;
+        max-height: 190px;
+        margin-top: 80px;
+        margin-bottom: auto;
+        margin-left: 20px;
+    }
+
+}
+
+
+ 

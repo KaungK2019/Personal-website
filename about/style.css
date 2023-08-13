@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #050510;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.maker {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    width: 600px;
+    height: 550px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255,0.04);
+    box-shadow: 0px 20px 30px rgb(0,0,0,0.3);
+    backdrop-filter: blur(30px);
+    z-index: 2;
+}
+
+.shape1 {
+    position: absolute;
+    left: 0px;
+    bottom: 5px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: linear-gradient(#3a0c3e , #e20762);
+    z-index: 1;
+}
+
+.shape2 {
+    position: absolute;
+    right: 4px;
+    top: 5px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(rgb(217, 12, 12) , rgb(122, 130, 87));
+    z-index: 1;
+}
+
+.container > h1 {
+    color: rgba(243, 247, 247, 0.863);
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: -63px;
+}
+
+.contain {
+    margin-top: 100px; 
+    height: 300px;
+}
+
+.skill-bar {
+    margin-left: 20px;
+    height: 150px;
+}
+
+.skill-bar p {   
+    font-size: 30px;
+    color: whitesmoke;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.skill-bar .bar {
+    position: relative;
+    border-radius: 5px;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.14);
+    width: 90%;
+    height: 15px;
+    padding:  5px 5px;
+    backdrop-filter: blur(20px);
+}
+
+.skill-bar .bar > .html {
+    position: relative;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #edebee;
+    box-shadow: 0px 0px 5px rgb(227, 211, 211);
+}
+
+.skill-bar .bar > .css {
+    width: 100%;
+}
+
+.html {
+    animation: html-fill 2s linear forwards;
+}
+
+@keyframes html-fill{
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 80%;
+    }
+}
+
+.css {
+    animation: css-fill 3s forwards;
+}
+
+@keyframes css-fill{
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 65%;
+    }
+}
+
+@media (max-width: 770px) {
+
+    .shape1 , .shape2 {
+        width: 150px;
+        height: 150px;
+    }
+
+    .container h1 {
+        font-size: 27px;
+    }
+
+    .skill-bar p {
+        font-size: 20px;
+    }
+
+    .maker {
+        width: 100%;
+        height: 100%;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .skill-bar .bar{
+
+        width: px;
+    }
+}
